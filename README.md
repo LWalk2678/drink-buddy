@@ -9,13 +9,10 @@ Drink Buddy
 Being a bartender can be hard to remember all of those drink recipes. Even harder is trying to find a book that does not have hundreds of recipes you will never use and takes too long to search through.
 Need to add your own recipe or a customer favorite? Feel free to add your own recipes and build the database of quality actually used drink recipes.
 
-## Wireframes
+## Wireframe and Component Heirarchy
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+https://whimsical.com/drink-buddy-FfyiyPfRfKSM9F9xtuvyRD
 
-## Component Hierarchy
-
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
 
 ## API and Data Sample
 
