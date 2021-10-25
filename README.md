@@ -13,11 +13,30 @@ Need to add your own recipe or a customer favorite? Feel free to add your own re
 
 https://whimsical.com/drink-buddy-FfyiyPfRfKSM9F9xtuvyRD
 
-
 ## API and Data Sample
 
 ```json
-~~~~~~~PASTE CODE SNIPPIT FROM API (AIRTABLE) HERE~~~~~~~~
+{
+  "records": [
+    {
+      "id": "recPs3sWbXfFm0rXN",
+      "fields": {
+        "Name": "Cosmopolitan",
+        "drink-type": "Martini",
+        "measurement1": "2 oz",
+        "ingredient1": "Citron Vodka",
+        "measurement2": "1/2 oz",
+        "ingredient2": "Tripple Sec",
+        "measurement3": "splash",
+        "ingredient3": "cranberry juice",
+        "garnish1": "lemon peel",
+        "Instructions": "Mix Vodka, Tripple Sec and cranberry together in a shaker glass. Strain into a Martini Glass.",
+        "glass-type": "Martini"
+      },
+      "createdTime": "2021-10-22T16:28:51.000Z"
+    }
+  ]
+}
 ```
 
 ### MVP/PostMVP
