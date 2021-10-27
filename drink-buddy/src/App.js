@@ -33,26 +33,31 @@ function App() {
         Add
       </nav>
       <div className='main'>
-        <div className='Recipe List'>Recipe List
+        <div className='body'>
+          <div className='drinkOfDay'>
+
+          </div>
+          <div className='Recipe List'>
           <Route path='/' exact>
         
             {recipes.map((indRecipe) => (
           
             <RecipeList 
             key={indRecipe.id}
-            postData={indRecipe}
-            toggleFetch={toggleFetch}
-            setToggleFetch={setToggleFetch}
+            recipeData={indRecipe}
             />
             ))}
           </Route>
 
           <Route path='/recipes/:id' exact>
-        <RecipeInfo
-          recipes = {recipes}
-        />
+            <RecipeInfo
+              recipes={recipes}
+              toggleFetch={toggleFetch}
+              setToggleFetch={setToggleFetch}
+            />
           </Route>
           
+          </div>
         </div>
       </div>
 
