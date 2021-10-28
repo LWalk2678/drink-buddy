@@ -10,12 +10,11 @@ const RecipeList = ({ recipeData}) => {
         
         <p>{recipeData.fields.measurement1} {recipeData.fields.ingredient1}</p>
         <p>{recipeData.fields.measurement2} {recipeData.fields.ingredient2}</p>
-        <em>Steps: {recipeData.fields.instructions}</em>
+        <em>Instructions: {recipeData.fields.instructions}</em>
         <br />
 
         <div className = 'links'>
-           <Link id='more' to={`/recipes/${recipeData.id}`}>
-            More Info</Link>
+           <Link id='more' to={`/recipes/${recipeData.id}`}><button>More Info</button></Link>
         </div>
         
         </div>
