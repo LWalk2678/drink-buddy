@@ -14,11 +14,11 @@ const Display = ({recipes, toggleFetch, setToggleFetch }) => {
     console.log('DELETE');
 
     // add toggleFetch
-    await axios.delete(API_URL + API_KEY + `&records[]=${recipes.id}`);
+    await axios.delete(API_URL + API_KEY + `&records[]=${currentRecipe.id}`);
 
   setToggleFetch(!toggleFetch);
   };
-
+  
 
   return (
 
