@@ -20,12 +20,13 @@ function App() {
   useEffect(() => {
     const getRecipes = async () => {
       const resp = await axios.get(API_URL + API_KEY);
-      setRecipes(resp.data.records);
+      setRecipes(resp.data.records)
+      
     }
     getRecipes();
   }, [toggleFetch]);
 
-  
+  console.log(`Inside App Component ${recipes}`)
     
   return (
     <div className="App">

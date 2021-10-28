@@ -1,14 +1,10 @@
 import { Link } from "react-router-dom";
-import { useState } from 'react';
 
 
 const RecipeList = ({ recipeData }) => {
   
-  // const [recipeSort, setRecipeSort] = useState()
-  // setRecipeSort(recipeData.fields.Name.sort((a, b) => a.Name.localeCompare(b.Name)))
-  console.log(recipeData.fields.Name)
- 
-
+  console.log(`Inside RecipeList Component ${recipeData.fields.Name}`)
+  
     return (
       <div>
         <h3>{recipeData.fields.Name}</h3>
