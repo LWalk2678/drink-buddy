@@ -6,8 +6,7 @@ import RecipeList from "./components/RecipeList.jsx";
 import RecipeInfo from "./components/RecipeInfo.jsx";
 import About from "./components/About.jsx";
 import Navbar from "./components/Navbar.jsx";
-import GitHub32 from "./images/GitHub32.png";
-import LIBug from "./images/LIBug.png";
+import Footer from "./components/Footer.jsx";
 import './App.css';
 
 const API_URL = 'https://api.airtable.com/v0/appfw6fQjC0mW34OF/Table%201?api_key='
@@ -33,9 +32,6 @@ function App() {
       <nav>
         <Navbar />
       </nav>
-      <div>
-        
-      </div>
       <div className='main'>
         <div className='body'>
           <div className='drinkOfDay'>
@@ -92,13 +88,8 @@ function App() {
           </div>
       </div>
 
-
-      <footer className='footer'>
-
-        <a href='https://github.com/LWalk2678'><img src={GitHub32} className="githubIcon" alt='GitHub'/></a>
-        
-        <a href='https://www.linkedin.com/in/lancewalkerco/'><img src={LIBug} className="linkedInIcon" alt='LinkedIn'/></a>
-        
+      <footer>
+        <Footer />
       </footer>
     </div>
   );
