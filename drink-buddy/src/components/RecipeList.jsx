@@ -17,7 +17,7 @@ const RecipeList = ({ recipeData}) => {
         <br />
 
         <div className = 'links'>
-           <Link id='more' to={`/recipes/${recipeData.id}`}><button>More Info</button></Link>
+           <Link id='more' to={`/recipes/${recipeData.id}`}><button className='moreButton'>More Info</button></Link>
         </div>
         
         </div>

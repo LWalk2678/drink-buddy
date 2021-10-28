@@ -30,6 +30,26 @@ nav {
   min-width: 100px;
 }
 
+.moreButton {
+  background-color: rgb(16, 172, 120);
+  border: none;
+  padding: 5px 5px;
+  border-radius: 8px;
+}
+
+.moreButton:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.infoButtons {
+  background-color: rgb(16, 172, 120);
+  border: none;
+  padding: 5px 5px;
+  border-radius: 8px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
 .drinkOfDay .bartender {
   max-width: 25vw;
   min-width: 100px;
