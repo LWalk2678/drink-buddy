@@ -27,6 +27,7 @@ nav {
 
 .body .thumbnail {
   width: 20vw;
+  min-width: 100px;
 }
 
 .drinkOfDay .bartender {

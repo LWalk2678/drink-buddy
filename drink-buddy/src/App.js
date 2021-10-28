@@ -27,6 +27,7 @@ function App() {
     getRecipes();
   }, [toggleFetch]);
 
+  
     
   return (
     <div className="App">
@@ -38,7 +39,9 @@ function App() {
       <div className='main'>
         <div className='body'>
           <div className='drinkOfDay'>
-             <img src='https://upload.wikimedia.org/wikipedia/commons/e/ee/Bartender.svg' className='bartender'></img>
+            <img src='https://upload.wikimedia.org/wikipedia/commons/e/ee/Bartender.svg' className='bartender' alt='Bartender'></img>
+            <h2>{recipes.fields}</h2>
+            
           </div>
           <div className='Recipe List'>
 
@@ -92,9 +95,9 @@ function App() {
 
       <footer className='footer'>
        
-        <a target="_blank" href='https://github.com/LWalk2678'><img src={GitHub32} className="githubIcon"/></a>
+        <a target="_blank" href='https://github.com/LWalk2678'><img src={GitHub32} className="githubIcon" alt='GitHub'/></a>
         
-        <a target="_blank" href='https://www.linkedin.com/in/lancewalkerco/'><img src={LIBug} className="linkedInIcon"/></a>
+        <a target="_blank" href='https://www.linkedin.com/in/lancewalkerco/'><img src={LIBug} className="linkedInIcon" alt='LinkedIn'/></a>
         
       </footer>
     </div>

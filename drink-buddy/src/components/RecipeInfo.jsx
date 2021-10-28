@@ -11,12 +11,11 @@ const Display = ({recipes, toggleFetch, setToggleFetch }) => {
   const currentRecipe = recipes.find(oneRecipe => oneRecipe.id === params.id)
 
   const deleteRecipe = async () => {
-    console.log('DELETE');
-
     // add toggleFetch
     await axios.delete(API_URL + API_KEY + `&records[]=${currentRecipe.id}`);
-
-  setToggleFetch(!toggleFetch);
+    
+    setToggleFetch(!toggleFetch);
+    
   };
   
 
