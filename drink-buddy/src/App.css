@@ -16,7 +16,22 @@ nav {
 
 .main {
   padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 3.5rem;
+}
+
+.body {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.body .thumbnail {
+  width: 20vw;
+}
+
+.drinkOfDay .bartender {
+  max-width: 25vw;
+  min-width: 100px;
 }
 
 .drinkPhoto {
@@ -57,4 +72,18 @@ nav {
 .aboutList {
   display: inline-block;
   text-align: left;
+}
+
+@media (max-width: 800px) {
+  .drinkOfDay .bartender {
+    display: none;
+  }
+  .body {
+    justify-content: center;
+  }
+}
+@media (max-width: 425px) {
+  .body {
+    color: purple;
+  }
 }

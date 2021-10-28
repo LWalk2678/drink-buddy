@@ -7,10 +7,13 @@ const RecipeList = ({ recipeData}) => {
     return (
       <div>
         <h4>{recipeData.fields.Name}</h4>
-        
-        <p>{recipeData.fields.measurement1} {recipeData.fields.ingredient1}</p>
-        <p>{recipeData.fields.measurement2} {recipeData.fields.ingredient2}</p>
-        <em>Instructions: {recipeData.fields.instructions}</em>
+        <img src={recipeData.fields.image} className='thumbnail'></img>
+        {/* <p>{recipeData.fields.ingredient1}</p>
+        <p>{recipeData.fields.ingredient2}</p>
+        <p>{recipeData.fields.ingredient3}</p>
+        <p>{recipeData.fields.ingredient4}</p>
+        <p>{recipeData.fields.ingredient5}</p>
+        <em>Instructions: {recipeData.fields.instructions}</em> */}
         <br />
 
         <div className = 'links'>

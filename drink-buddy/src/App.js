@@ -38,7 +38,7 @@ function App() {
       <div className='main'>
         <div className='body'>
           <div className='drinkOfDay'>
-
+             <img src='https://upload.wikimedia.org/wikipedia/commons/e/ee/Bartender.svg' className='bartender'></img>
           </div>
           <div className='Recipe List'>
 
@@ -51,7 +51,8 @@ function App() {
                 />
               ))}
             </Route>
-
+          </div>
+          
             {/* Routing to Add New recipe in Form Component */}
             <Route path='/newdrink' exact>
               <Form
@@ -84,8 +85,8 @@ function App() {
             />
           </Route>
           
+          
           </div>
-        </div>
       </div>
 
 
