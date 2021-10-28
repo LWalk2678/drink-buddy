@@ -17,17 +17,30 @@ const Display = ({recipes, toggleFetch, setToggleFetch }) => {
     await axios.delete(API_URL + API_KEY + `&records[]=${currentRecipe.id}`);
 
   setToggleFetch(!toggleFetch);
-};
+  };
+  
+  const allMeasurements = [];
+  for (let i = 1; i <= 10; i++)
 
   return (
 
       <div>
       <h2>{currentRecipe.fields.Name}</h2>
-      <img src={currentRecipe.fields.image} alt={currentRecipe.fields.Name} className="drinkPhoto"/>
-        <div>
+      <img src={currentRecipe.fields.image} alt={currentRecipe.fields.Name} className="drinkPhoto" />
+      
+        <div className='ingredientList'>
           <ul>
-            <li>{currentRecipe.fields.measurement1} {currentRecipe.fields.ingredient1}</li>
-            <li>{currentRecipe.fields.ingredient2}</li>
+          {currentRecipe.fields.ingredient1 ? <li>{currentRecipe.fields.measurement1} {currentRecipe.fields.ingredient1} </li> : null}
+          {currentRecipe.fields.ingredient2 ? <li>{currentRecipe.fields.measurement2} {currentRecipe.fields.ingredient2} </li> : null}
+          {currentRecipe.fields.ingredient3 ? <li>{currentRecipe.fields.measurement3} {currentRecipe.fields.ingredient3} </li> : null }
+          {currentRecipe.fields.ingredient4 ? <li>{currentRecipe.fields.measurement4} {currentRecipe.fields.ingredient4} </li> : null }
+          {currentRecipe.fields.ingredient5 ? <li>{currentRecipe.fields.measurement5} {currentRecipe.fields.ingredient5} </li> : null }
+          {currentRecipe.fields.ingredient6 ? <li>{currentRecipe.fields.measurement6} {currentRecipe.fields.ingredient6} </li> : null}
+          {currentRecipe.fields.ingredient7 ? <li>{currentRecipe.fields.measurement7} {currentRecipe.fields.ingredient7} </li> : null }
+          {currentRecipe.fields.ingredient8 ? <li>{currentRecipe.fields.measurement8} {currentRecipe.fields.ingredient8} </li> : null }
+          {currentRecipe.fields.ingredient9 ? <li>{currentRecipe.fields.measurement9} {currentRecipe.fields.ingredient9} </li> : null }
+          {currentRecipe.fields.ingredient10 ? <li>{currentRecipe.fields.measurement10} {currentRecipe.fields.ingredient10} </li> : null }
+            
           </ul>
         </div>
       <p>Instructions:{currentRecipe.fields.instructions}</p>
@@ -37,7 +50,9 @@ const Display = ({recipes, toggleFetch, setToggleFetch }) => {
       </div>
       
       </div>
-      
+      // <li>{currentRecipe.fields.measurement1} {currentRecipe.fields.ingredient1}</li>
+      // <li>{currentRecipe.fields.measurement2} {currentRecipe.fields.ingredient2}</li>
+      // <li>{currentRecipe.fields.measurement3} {currentRecipe.fields.ingredient3}</li>
   )
     
 }

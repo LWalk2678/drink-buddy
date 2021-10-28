@@ -4,6 +4,7 @@ import { Route, Link } from "react-router-dom";
 //import Form from "./components/Form.jsx";
 import RecipeList from "./components/RecipeList.jsx";
 import RecipeInfo from "./components/RecipeInfo.jsx";
+import About from "./components/About.jsx";
 import './App.css';
 
 const API_URL = 'https://api.airtable.com/v0/appfw6fQjC0mW34OF/Table%201?api_key='
@@ -30,7 +31,8 @@ function App() {
       <nav>
       <Link id= 'home' to="/"><h3>Home</h3></Link>
         Search
-        Add
+        <Link id= 'newdrink' to="/newdrink"><h3>Add a Drink</h3></Link>
+      <Link id= 'about' to="/about"><h3>About</h3></Link>
       </nav>
       <div className='main'>
         <div className='body'>
@@ -38,16 +40,20 @@ function App() {
 
           </div>
           <div className='Recipe List'>
-          <Route path='/' exact>
+            <Route path='/' exact>
         
-            {recipes.map((indRecipe) => (
+              {recipes.map((indRecipe) => (
           
-            <RecipeList 
-            key={indRecipe.id}
-            recipeData={indRecipe}
-            />
-            ))}
-          </Route>
+              <RecipeList 
+                key={indRecipe.id}
+                recipeData={indRecipe}
+              />
+              ))}
+            </Route>
+
+            <Route path='/about' exact>
+              <About/>
+            </Route>
 
           <Route path='/recipes/:id' exact>
             <RecipeInfo

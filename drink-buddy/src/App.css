@@ -7,7 +7,7 @@
 
 nav {
   background-color: rgb(16, 172, 120);
-  display: flexbox;
+  display: flex;
   justify-content: space-evenly;
   position: absolute;
   top: 0;
@@ -24,10 +24,26 @@ nav {
   min-width: 200px;
 }
 
+.ingredientList {
+  white-space: nowrap;
+  display: inline-block;
+  text-align: left;
+}
+
 .footer {
   background-color: rgb(16, 172, 120);
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 2.5rem;
+}
+
+.aboutText {
+  width: 300px;
+  margin: auto;
+}
+
+.aboutList {
+  display: flex;
+  justify-content: center;
 }
