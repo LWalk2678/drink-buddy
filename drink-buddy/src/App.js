@@ -1,10 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from 'react';
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Form from "./components/Form.jsx";
 import RecipeList from "./components/RecipeList.jsx";
 import RecipeInfo from "./components/RecipeInfo.jsx";
 import About from "./components/About.jsx";
+import Navbar from "./components/Navbar.jsx";
 import GitHub32 from "./images/GitHub32.png";
 import LIBug from "./images/LIBug.png";
 import './App.css';
@@ -30,10 +31,11 @@ function App() {
   return (
     <div className="App">
       <nav>
-        <Link id= 'home' to="/"><h3>Home</h3></Link>
-        <Link id= 'newdrink' to="/newdrink"><h3>Add a Drink</h3></Link>
-        <Link id= 'about' to="/about"><h3>About</h3></Link>
+        <Navbar />
       </nav>
+      <div>
+        
+      </div>
       <div className='main'>
         <div className='body'>
           <div className='drinkOfDay'>

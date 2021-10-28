@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-nav {
+.navbar {
   background-color: rgb(16, 172, 120);
   display: flex;
   justify-content: space-evenly;
