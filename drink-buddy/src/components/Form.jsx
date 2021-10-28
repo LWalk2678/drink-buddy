@@ -35,9 +35,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
   
   const handlePostRequest = async (ev) => {
     ev.preventDefault();
-    console.log('form submitted');
-
-    
+        
     const newDrink = {
       records: [
         {

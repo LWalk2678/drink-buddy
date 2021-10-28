@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 
 
-const RecipeList = ({ recipeData}) => {
+const RecipeList = ({ recipeData }) => {
+  
+  // const [recipeData, setRecipeData] = useState()
+  // setRecipeData(movieData.data.data.sort((a, b) => a.title.localeCompare(b.title)))
 
 
     return (
