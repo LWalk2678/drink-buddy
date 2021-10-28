@@ -44,6 +44,6 @@ nav {
 }
 
 .aboutList {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  text-align: left;
 }
