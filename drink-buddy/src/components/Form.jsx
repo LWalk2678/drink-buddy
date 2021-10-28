@@ -9,26 +9,26 @@ const API_KEY = 'keyt8Rv1pHLbChQYb';
 const Form = ({formType, toggleFetch, setToggleFetch}) => {
 
   const [Name, setName] = useState([]);
-  const [drinkType, setDrinkType] = useState([]);
+  // const [drinkType, setDrinkType] = useState([]);
   const [measurement1, setMeasurement1] = useState([]);
   const [ingredient1, setIngredient1] = useState('');
   const [measurement2, setMeasurement2] = useState([]);
   const [ingredient2, setIngredient2] = useState('');
-  const [measurement3, setMeasurement3] = useState([]);
+  const [measurement3, setMeasurement3] = useState('n/a');
   const [ingredient3, setIngredient3] = useState('');
-  const [measurement4, setMeasurement4] = useState([]);
-  const [ingredient4, setIngredient4] = useState('');
-  const [measurement5, setMeasurement5] = useState([]);
-  const [ingredient5, setIngredient5] = useState('');
-  const [measurement6, setMeasurement6] = useState([]);
-  const [ingredient6, setIngredient6] = useState('');
-  const [measurement7, setMeasurement7] = useState([]);
-  const [ingredient7, setIngredient7] = useState('');
-  const [measurement8, setMeasurement8] = useState([]);
-  const [ingredient8, setIngredient8] = useState('');
+  // const [measurement4, setMeasurement4] = useState([]);
+  // const [ingredient4, setIngredient4] = useState('');
+  // const [measurement5, setMeasurement5] = useState([]);
+  // const [ingredient5, setIngredient5] = useState('');
+  // const [measurement6, setMeasurement6] = useState([]);
+  // const [ingredient6, setIngredient6] = useState('');
+  // const [measurement7, setMeasurement7] = useState([]);
+  // const [ingredient7, setIngredient7] = useState('');
+  // const [measurement8, setMeasurement8] = useState([]);
+  // const [ingredient8, setIngredient8] = useState('');
+  // const [glassType, setGlassType] = useState([]);
+  // const [garnish, setGarnish] = useState([]);
   const [instructions, setInstructions] = useState([]);
-  const [glassType, setGlassType] = useState([]);
-  const [garnish, setGarnish] = useState([]);
   const [redirectHome, setRedirectHome] = useState(false);
   const params = useParams();
   
@@ -42,25 +42,25 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
         {
           fields: {
             Name,
-            drinkType,
+            // drinkType,
             measurement1,
             ingredient1,
             measurement2,
             ingredient2,
             measurement3,
-            ingredient3,
-            measurement4,
-            ingredient4,
-            measurement5,
-            ingredient5,
-            measurement6,
-            ingredient6,
-            measurement7,
-            ingredient7,
-            measurement8,
-            ingredient8,
-            glassType,
-            garnish,
+            // ingredient3,
+            // measurement4,
+            // ingredient4,
+            // measurement5,
+            // ingredient5,
+            // measurement6,
+            // ingredient6,
+            // measurement7,
+            // ingredient7,
+            // measurement8,
+            // ingredient8,
+            // glassType,
+            // garnish,
             instructions,
           }
         }
@@ -83,25 +83,25 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
           id:recipe_id,
           fields: {
             Name,
-            drinkType,
+            // drinkType,
             measurement1,
             ingredient1,
             measurement2,
             ingredient2,
             measurement3,
-            ingredient3,
-            measurement4,
-            ingredient4,
-            measurement5,
-            ingredient5,
-            measurement6,
-            ingredient6,
-            measurement7,
-            ingredient7,
-            measurement8,
-            ingredient8,
-            glassType,
-            garnish,
+            // ingredient3,
+            // measurement4,
+            // ingredient4,
+            // measurement5,
+            // ingredient5,
+            // measurement6,
+            // ingredient6,
+            // measurement7,
+            // ingredient7,
+            // measurement8,
+            // ingredient8,
+            // glassType,
+            // garnish,
             instructions,
           }
         }
@@ -121,21 +121,21 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
   return (
     <div>
       <form onSubmit={formType === 'drink' ? handlePostRequest : handlePutRequest}>
-        <br/>
+        <br />
           <label htmlFor="Name">Drink Name:</label>
           <input type="text" id="Name" onChange={(ev) => setName(ev.target.value)} />
         <br />
-          <label htmlFor="drinkType">Drink Type:</label>
+          {/* <label htmlFor="drinkType">Drink Type:</label>
           <select id="drinkType" onChange={(ev) => setDrinkType(ev.target.value)}>
             <option value=''> --- </option>
             <option value='Mixed-drink'> mixed-drink</option>
             <option value='Martini'> Martini</option>
             <option value='Shot'> Shot</option>
           </select>
-        <br />
+        <br /> */}
           <label htmlFor="meaurement1">Ingredient 1:</label>
           <select id="measurement1" onChange={(ev) => setMeasurement1(ev.target.value)}>
-            <option value=''> --- </option>
+            <option value='n/a'> --- </option>
             <option value='1/4 oz'> 1/4 oz</option>
             <option value='1/2 oz'> 1/2 oz</option>
             <option value='3/4 oz'> 3/4 oz</option>
@@ -153,7 +153,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
         <br />
           <label htmlFor="meaurement2">Ingredient 2:</label>
           <select id="measurement2" onChange={(ev) => setMeasurement2(ev.target.value)}>
-            <option value=''> --- </option>
+            <option value='n/a'> --- </option>
             <option value='1/4 oz'> 1/4 oz</option>
             <option value='1/2 oz'> 1/2 oz</option>
             <option value='3/4 oz'> 3/4 oz</option>
@@ -171,7 +171,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
         <br />
           <label htmlFor="meaurement3">Ingredient 3:</label>
           <select id="measurement3" onChange={(ev) => setMeasurement3(ev.target.value)}>
-            <option value=''> --- </option>
+            {/* <option value='n/a'> --- </option> */}
             <option value='1/4 oz'> 1/4 oz</option>
             <option value='1/2 oz'> 1/2 oz</option>
             <option value='3/4 oz'> 3/4 oz</option>
@@ -187,7 +187,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
           <label htmlFor="ingredient3"></label>
           <input type="text" placeholder='ingredient 3 name' id="ingredient3" onChange={(ev) => setIngredient3(ev.target.value)} />
         <br />
-          <label htmlFor="meaurement4">Ingredient 4:</label>
+          {/* <label htmlFor="meaurement4">Ingredient 4:</label>
           <select id="measurement4" onChange={(ev) => setMeasurement4(ev.target.value)}>
             <option value=''> --- </option>
             <option value='1/4 oz'> 1/4 oz</option>
@@ -288,7 +288,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
         <br />
           <label htmlFor="garnish">Garnish:</label>
           <input type="text" id="garnish" placeholder="Lime, Lemon, Sugar, etc." onChange={(ev) => setGarnish(ev.target.value)}/>
-        <br/>
+        <br/> */}
           <label htmlFor="instructions">Instructions:</label>
           <input type="text" id="instructions" onChange={(ev) => setInstructions(ev.target.value)}/>
         
