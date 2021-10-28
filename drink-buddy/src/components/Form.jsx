@@ -148,6 +148,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
             <option value='2 oz'> 2 oz</option>
             <option value='3 oz'> 3 oz</option>
             <option value='4 oz'> 4 oz</option>
+            <option value='2 dashes'> 2 dashes</option>
             <option value='fill'> fill</option>
             <option value='splash'> splash</option>
           </select>
@@ -166,6 +167,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
             <option value='2 oz'> 2 oz</option>
             <option value='3 oz'> 3 oz</option>
             <option value='4 oz'> 4 oz</option>
+            <option value='2 dashes'> 2 dashes</option> 
             <option value='fill'> fill</option>
             <option value='splash'> splash</option>
           </select>
@@ -184,6 +186,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
             <option value='2 oz'> 2 oz</option>
             <option value='3 oz'> 3 oz</option>
             <option value='4 oz'> 4 oz</option>
+            <option value='2 dashes'> 2 dashes</option>
             <option value='fill'> fill</option>
             <option value='splash'> splash</option>
           </select>
@@ -202,6 +205,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
             <option value='2 oz'> 2 oz</option>
             <option value='3 oz'> 3 oz</option>
             <option value='4 oz'> 4 oz</option>
+            <option value='2 dashes'> 2 dashes</option>  
             <option value='fill'> fill</option>
             <option value='splash'> splash</option>
           </select>
@@ -220,6 +224,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
             <option value='2 oz'> 2 oz</option>
             <option value='3 oz'> 3 oz</option>
             <option value='4 oz'> 4 oz</option>
+            <option value='2 dashes'> 2 dashes</option>
             <option value='fill'> fill</option>
             <option value='splash'> splash</option>
           </select>
@@ -238,6 +243,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
             <option value='2 oz'> 2 oz</option>
             <option value='3 oz'> 3 oz</option>
             <option value='4 oz'> 4 oz</option>
+            <option value='2 dashes'> 2 dashes</option>
             <option value='fill'> fill</option>
             <option value='splash'> splash</option>
           </select>
@@ -256,6 +262,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
             <option value='2 oz'> 2 oz</option>
             <option value='3 oz'> 3 oz</option>
             <option value='4 oz'> 4 oz</option>
+            <option value='2 dashes'> 2 dashes</option>
             <option value='fill'> fill</option>
             <option value='splash'> splash</option>
           </select>
@@ -274,6 +281,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
             <option value='2 oz'> 2 oz</option>
             <option value='3 oz'> 3 oz</option>
             <option value='4 oz'> 4 oz</option>
+            <option value='2 dashes'> 2 dashes</option>
             <option value='fill'> fill</option>
             <option value='splash'> splash</option>
           </select>

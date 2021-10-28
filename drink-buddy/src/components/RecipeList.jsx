@@ -6,7 +6,7 @@ const RecipeList = ({ recipeData}) => {
 
     return (
       <div>
-        <h4>{recipeData.fields.Name}</h4>
+        <h3>{recipeData.fields.Name}</h3>
         <img src={recipeData.fields.image} className='thumbnail' alt='drink'></img>
         {/* <p>{recipeData.fields.ingredient1}</p>
         <p>{recipeData.fields.ingredient2}</p>
