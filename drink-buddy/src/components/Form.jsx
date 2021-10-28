@@ -9,6 +9,7 @@ const API_KEY = 'keyt8Rv1pHLbChQYb';
 const Form = ({formType, toggleFetch, setToggleFetch}) => {
 
   const [Name, setName] = useState([]);
+  const [measurement1, setMeasurement1] = useState([]);
   const [ingredient1, setIngredient1] = useState([]);
   const [instructions, setInstructions] = useState([]);
   const [redirectHome, setRedirectHome] = useState(false);
@@ -70,6 +71,19 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
         <br/>
         <label htmlFor="Name">Name:</label>
         <input type="text" id="Name" onChange={(ev) => setName(ev.target.value)} />
+        <select id='measurement1' onChange={(ev) => setMeasurement1(ev.target.value)}>
+          <option value='1/4 oz'> 1/4 oz</option>
+          <option value='1/2 oz'> 1/2 oz</option>
+          <option value='3/4 oz'> 3/4 oz</option>
+          <option value='1 oz'> 1 oz</option>
+          <option value='1 1/4 oz'> 1 1/4 oz</option>
+          <option value='1 1/2 oz'> 1 1/2 oz</option>
+          <option value='2 oz'> 2 oz</option>
+          <option value='3 oz'> 3 oz</option>
+          <option value='4 oz'> 4 oz</option>
+          <option value='fill'> fill</option>
+          <option value='splash'> splash</option>
+        </select>
         <label htmlFor="ingredient1">Ingredients:</label>
         <input type="text" id="ingredient1" onChange={(ev) => setIngredient1(ev.target.value)} />
         <label htmlFor="instructions">Steps:</label>

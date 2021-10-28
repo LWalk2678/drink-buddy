@@ -14,13 +14,11 @@ const Display = ({recipes, toggleFetch, setToggleFetch }) => {
     console.log('DELETE');
 
     // add toggleFetch
-    await axios.delete(API_URL + API_KEY + `&records[]=${currentRecipe.id}`);
+    await axios.delete(API_URL + API_KEY + `&records[]=${recipes.id}`);
 
   setToggleFetch(!toggleFetch);
   };
-  
-  const allMeasurements = [];
-  for (let i = 1; i <= 10; i++)
+
 
   return (
 
@@ -50,9 +48,6 @@ const Display = ({recipes, toggleFetch, setToggleFetch }) => {
       </div>
       
       </div>
-      // <li>{currentRecipe.fields.measurement1} {currentRecipe.fields.ingredient1}</li>
-      // <li>{currentRecipe.fields.measurement2} {currentRecipe.fields.ingredient2}</li>
-      // <li>{currentRecipe.fields.measurement3} {currentRecipe.fields.ingredient3}</li>
   )
     
 }
