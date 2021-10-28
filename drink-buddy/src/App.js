@@ -20,8 +20,6 @@ function App() {
   useEffect(() => {
     const getRecipes = async () => {
       const resp = await axios.get(API_URL + API_KEY);
-      console.log(resp.data)
-      console.log(resp.data.records);
       setRecipes(resp.data.records);
     }
     getRecipes();
@@ -94,7 +92,7 @@ function App() {
 
 
       <footer className='footer'>
-       
+
         <a href='https://github.com/LWalk2678'><img src={GitHub32} className="githubIcon" alt='GitHub'/></a>
         
         <a href='https://www.linkedin.com/in/lancewalkerco/'><img src={LIBug} className="linkedInIcon" alt='LinkedIn'/></a>
