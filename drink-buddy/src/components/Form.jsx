@@ -10,7 +10,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
 
   const [Name, setName] = useState([]);
   const [measurement1, setMeasurement1] = useState([]);
-  const [ingredient1, setIngredient1] = useState([]);
+  const [ingredient1, setIngredient1] = useState('');
   const [instructions, setInstructions] = useState([]);
   const [redirectHome, setRedirectHome] = useState(false);
   const params = useParams();
@@ -25,6 +25,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
         {
           fields: {
             Name,
+            measurement1,
             ingredient1,
             instructions,
           }
@@ -48,6 +49,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
           id:recipe_id,
           fields: {
             Name,
+            measurement1,
             ingredient1,
             instructions,
           }
@@ -71,21 +73,23 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
         <br/>
         <label htmlFor="Name">Name:</label>
         <input type="text" id="Name" onChange={(ev) => setName(ev.target.value)} />
-        <select id='measurement1' onChange={(ev) => setMeasurement1(ev.target.value)}>
-          <option value='1/4 oz'> 1/4 oz</option>
-          <option value='1/2 oz'> 1/2 oz</option>
-          <option value='3/4 oz'> 3/4 oz</option>
-          <option value='1 oz'> 1 oz</option>
-          <option value='1 1/4 oz'> 1 1/4 oz</option>
-          <option value='1 1/2 oz'> 1 1/2 oz</option>
-          <option value='2 oz'> 2 oz</option>
-          <option value='3 oz'> 3 oz</option>
-          <option value='4 oz'> 4 oz</option>
-          <option value='fill'> fill</option>
-          <option value='splash'> splash</option>
-        </select>
-        <label htmlFor="ingredient1">Ingredients:</label>
-        <input type="text" id="ingredient1" onChange={(ev) => setIngredient1(ev.target.value)} />
+        <label htmlFor="meaurement1">Indregient 1:</label>
+        <select id="measurement1" onChange={(ev) => setMeasurement1(ev.target.value)}>
+            <option value='1/4 oz'> 1/4 oz</option>
+            <option value='1/2 oz'> 1/2 oz</option>
+            <option value='3/4 oz'> 3/4 oz</option>
+            <option value='1 oz'> 1 oz</option>
+            <option value='1 1/4 oz'> 1 1/4 oz</option>
+            <option value='1 1/2 oz'> 1 1/2 oz</option>
+            <option value='2 oz'> 2 oz</option>
+            <option value='3 oz'> 3 oz</option>
+            <option value='4 oz'> 4 oz</option>
+            <option value='fill'> fill</option>
+            <option value='splash'> splash</option>
+          </select>
+        
+        <label htmlFor="ingredient1"></label>
+        <input type="text" placeholder='ingredient 1 name' id="ingredient1" onChange={(ev) => setIngredient1(ev.target.value)} />
         <label htmlFor="instructions">Steps:</label>
         <input type="text" id="instructions" onChange={(ev) => setInstructions(ev.target.value)}/>
         

@@ -14,6 +14,7 @@ const About = () => {
           <li><a target="_blank" href='https://stackoverflow.com/questions/58068866/how-to-align-bullet-points-in-an-unordered-list-in-the-center-using-inline-css/'>Align unordered list</a></li>
         <li><a target="_blank" href='https://stackoverflow.com/questions/63926848/react-show-message-if-no-image-in-api-using-ternary-operator-getting-parsing-e'>Do not show extra blank ingredients</a></li>
         <li><a target="_blank" href='https://newbedev.com/react-router-external-link'>Extrnal link in new page</a></li>
+        <li><a target="_blank" href='https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/'>Keeping Footer in place</a></li>
         </ul>
     </div>
 
