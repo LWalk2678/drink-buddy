@@ -9,6 +9,10 @@ Drink Buddy
 Being a bartender can be hard to remember all of those drink recipes. Even harder is trying to find a book that does not have hundreds of recipes you will never use and takes too long to search through.
 Need to add your own recipe or a customer favorite? Feel free to add your own recipes and build the database of quality actually used drink recipes.
 
+## Netlify Deployed Site:
+
+https://drink-buddy.netlify.app/
+
 ## Wireframe and Component Heirarchy
 
 https://whimsical.com/drink-buddy-FfyiyPfRfKSM9F9xtuvyRD
@@ -119,6 +123,8 @@ _These are examples only. Replace with your own Post-MVP features._
 
 ### I was particularly proud of the code below because:
 
+-On previous projects I had spent a lot of time in CSS to make my Links look like a Button. Happy to dind this coding to silplify making the Links match the styling of a button.
+
 ```
-~~~~~The code goes HERE~~~~~~~
+<Link id='edit' to={`/edit/${currentRecipe.id}`}><button>Edit Recipe</button></Link>
 ```
