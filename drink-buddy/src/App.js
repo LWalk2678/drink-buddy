@@ -16,9 +16,7 @@ function App() {
     const [toggleFetch, setToggleFetch] = useState(true);
   
   useEffect(() => {
-    console.log('Getting Recipes');
     const getRecipes = async () => {
-      console.log('Getting request')
       const resp = await axios.get(API_URL + API_KEY);
       console.log(resp.data)
       console.log(resp.data.records);
@@ -57,6 +55,15 @@ function App() {
             <Route path='/newdrink' exact>
               <Form
                 formType={'drink'}
+                toggleFetch={toggleFetch}
+                setToggleFetch={setToggleFetch}
+              />
+            </Route>
+
+            {/* Routing to Edit a recipe with put request in Form Component */}
+            <Route path='/edit/:recipe_id' exact>
+              <Form
+                formType={'put'}
                 toggleFetch={toggleFetch}
                 setToggleFetch={setToggleFetch}
               />
