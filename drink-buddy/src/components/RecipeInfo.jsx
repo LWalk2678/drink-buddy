@@ -36,8 +36,6 @@ const Display = ({recipes, toggleFetch, setToggleFetch }) => {
           {currentRecipe.fields.ingredient6 ? <li>{currentRecipe.fields.measurement6} {currentRecipe.fields.ingredient6} </li> : null}
           {currentRecipe.fields.ingredient7 ? <li>{currentRecipe.fields.measurement7} {currentRecipe.fields.ingredient7} </li> : null }
           {currentRecipe.fields.ingredient8 ? <li>{currentRecipe.fields.measurement8} {currentRecipe.fields.ingredient8} </li> : null }
-          {currentRecipe.fields.ingredient9 ? <li>{currentRecipe.fields.measurement9} {currentRecipe.fields.ingredient9} </li> : null }
-          {currentRecipe.fields.ingredient10 ? <li>{currentRecipe.fields.measurement10} {currentRecipe.fields.ingredient10} </li> : null }
             
           </ul>
       </div>

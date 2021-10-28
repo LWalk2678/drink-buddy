@@ -5,6 +5,8 @@ import Form from "./components/Form.jsx";
 import RecipeList from "./components/RecipeList.jsx";
 import RecipeInfo from "./components/RecipeInfo.jsx";
 import About from "./components/About.jsx";
+import GitHub32 from "./images/GitHub32.png";
+import LIBug from "./images/LIBug.png";
 import './App.css';
 
 const API_URL = 'https://api.airtable.com/v0/appfw6fQjC0mW34OF/Table%201?api_key='
@@ -29,10 +31,9 @@ function App() {
   return (
     <div className="App">
       <nav>
-      <Link id= 'home' to="/"><h3>Home</h3></Link>
-        Search
+        <Link id= 'home' to="/"><h3>Home</h3></Link>
         <Link id= 'newdrink' to="/newdrink"><h3>Add a Drink</h3></Link>
-      <Link id= 'about' to="/about"><h3>About</h3></Link>
+        <Link id= 'about' to="/about"><h3>About</h3></Link>
       </nav>
       <div className='main'>
         <div className='body'>
@@ -89,9 +90,11 @@ function App() {
 
 
       <footer className='footer'>
-        GitHub Link
-        LinkedIn Link
-        Delete record
+       
+        <a target="_blank" href='https://github.com/LWalk2678'><img src={GitHub32} className="githubIcon"/></a>
+        
+        <a target="_blank" href='https://www.linkedin.com/in/lancewalkerco/'><img src={LIBug} className="linkedInIcon"/></a>
+        
       </footer>
     </div>
   );
