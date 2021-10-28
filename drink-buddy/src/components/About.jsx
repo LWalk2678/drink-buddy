@@ -16,6 +16,7 @@ const About = () => {
         <li><a target="_blank" href='https://newbedev.com/react-router-external-link'>Extrnal link in new page</a></li>
         <li><a target="_blank" href='https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/'>Keeping Footer in place</a></li>
         <li><a target="_blank" href='https://stackoverflow.com/questions/41080481/in-reactjs-how-to-invoke-link-click-via-button-press'>Use a Link as a Button</a></li>
+        <li><a target="_blank" href='https://commons.wikimedia.org/wiki/Main_Page'>Drink Photos</a></li>
         </ul>
     </div>
 
