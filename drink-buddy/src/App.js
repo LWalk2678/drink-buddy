@@ -95,9 +95,9 @@ function App() {
 
       <footer className='footer'>
        
-        <a target="_blank" href='https://github.com/LWalk2678'><img src={GitHub32} className="githubIcon" alt='GitHub'/></a>
+        <a href='https://github.com/LWalk2678'><img src={GitHub32} className="githubIcon" alt='GitHub'/></a>
         
-        <a target="_blank" href='https://www.linkedin.com/in/lancewalkerco/'><img src={LIBug} className="linkedInIcon" alt='LinkedIn'/></a>
+        <a href='https://www.linkedin.com/in/lancewalkerco/'><img src={LIBug} className="linkedInIcon" alt='LinkedIn'/></a>
         
       </footer>
     </div>
