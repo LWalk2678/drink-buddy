@@ -102,9 +102,9 @@ _These are examples only. Replace with your own Post-MVP features._
 | Creating the Pull |    H     |      1hr       |     1hrs      |    1hrs     |
 | Creating the Post |    H     |      1hr       |     2hrs      |    2hrs     |
 | Deploying the App |    H     |      2hrs      |     .5hrs     |    .5hrs    |
-| CSS Styling       |    M     |      6hrs      |     5hrs      |    5hrs     |
+| CSS Styling       |    M     |      8hrs      |     9hrs      |    9hrs     |
 | ----------------- | -------- | -------------- | ------------- | ----------- |
-| Total             |    H     |     24hrs      |    24.5hrs    |   24.5hrs   |
+| Total             |    H     |     26hrs      |    28.5hrs    |   28.5hrs   |
 
 ## SWOT Analysis
 
