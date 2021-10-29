@@ -20,6 +20,15 @@ function App() {
   useEffect(() => {
     const getRecipes = async () => {
       const resp = await axios.get(API_URL + API_KEY);
+
+      resp.data.records.sort((a, b) => {
+        if (a.fields.Name < b.fields.Name) {
+          return -1;
+        }
+        if (a.fields.Name > b.fields.Name) {
+          return 1;
+        } return 0;
+      });
       setRecipes(resp.data.records)
     }
     getRecipes();
