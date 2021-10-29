@@ -307,6 +307,8 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
         <input id='submit' type="submit" />
         
       </form>
+
+      <img src='https://matthewgilson.files.wordpress.com/2013/02/colepours.gif' alt='drink'></img>
     </div>
   )
 }
