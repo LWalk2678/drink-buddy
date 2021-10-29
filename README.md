@@ -59,13 +59,11 @@ https://whimsical.com/drink-buddy-FfyiyPfRfKSM9F9xtuvyRD
 - Be Styled, through CSS, Styled Components or CSS-in-JS
 - Use flexbox (`display: flex`) or CSS Grid
 - Implement responsive design on 2 screen sizes, using a media query (desktop and mobile)
--
 - Indent properly.
 - Utilize high-quality, semantic variable names.
 - Follow `camelCase`, `kebab-case` and `PascalCase` conventions in your code
 - Remove unnecessary boilerplate React files and code.
 - Remove all `console.log()`s and commented out code (functional notes and comments are acceptable).
--
 - Deployed via [Netlify](https://app.netlify.com/signup).
 - Minimum of 50 commits
 
@@ -79,15 +77,15 @@ _These are examples only. Replace with your own Post-MVP features._
 
 ## Project Schedule
 
-| Day           | Deliverable                                        | Status     |
-| ------------- | -------------------------------------------------- | ---------- |
-| October 21-22 | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
-| October 22    | Project Approval                                   | Incomplete |
-| October 25    | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
-| October 22-27 | Pseudocode / actual code                           | Incomplete |
-| October 26    | Initial Clickable Model / Deployment               | Incomplete |
-| October 27    | MVP                                                | Incomplete |
-| October 29    | Presentations                                      | Incomplete |
+| Day           | Deliverable                                        | Status   |
+| ------------- | -------------------------------------------------- | -------- |
+| October 21-22 | Prompt / Wireframes / Priority Matrix / Timeframes | Complete |
+| October 22    | Project Approval                                   | Complete |
+| October 25    | Core Application Structure (HTML, CSS, etc.)       | Complete |
+| October 22-27 | Pseudocode / actual code                           | Complete |
+| October 26    | Initial Clickable Model / Deployment               | Complete |
+| October 27    | MVP                                                | Complete |
+| October 29    | Presentations                                      | Complete |
 
 ## Timeframes
 
