@@ -91,8 +91,7 @@ function App() {
             />
           </Route>
           
-          
-          </div>
+        </div>
       </div>
 
       <footer>
