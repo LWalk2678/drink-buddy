@@ -47,8 +47,8 @@ const Display = ({recipes, toggleFetch, setToggleFetch }) => {
           <br />
           <br />
         <div className = 'links'>
-          <button onClick={deleteRecipe} className='infoButtons'>Delete</button>
-          <Link id='edit' to={`/edit/${currentRecipe.id}`}><button className='infoButtons'>Edit Recipe</button></Link>
+          <button onClick={deleteRecipe} className='deleteButton'>Delete</button>
+          <Link id='edit' to={`/edit/${currentRecipe.id}`}><button className='editButton'>Edit Recipe</button></Link>
         </div>
       </div>
   )

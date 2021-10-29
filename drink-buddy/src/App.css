@@ -65,7 +65,7 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.infoButtons {
+.editButton {
   background-color: rgb(16, 172, 120);
   border: none;
   padding: 5px 5px;
@@ -74,7 +74,23 @@
   margin-left: 5px;
 }
 
-.infoButtons:hover {
+.editButton:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.deleteButton {
+  background: transparent;
+  border: none;
+  color: rgb(193, 193, 193);
+}
+
+.deleteButton:hover {
+  background-color: rgb(16, 172, 120);
+  border: none;
+  padding: 5px 5px;
+  border-radius: 8px;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: black;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
