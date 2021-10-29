@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
 .App {
   background-color: rgb(193, 193, 193);
   position: relative;
   min-height: 100vh;
+  font-family: "Ubuntu", sans-serif;
   text-align: center;
 }
 
@@ -13,6 +16,19 @@
   top: 0;
   width: 100%;
   height: 60px;
+}
+
+#home {
+  text-decoration: none;
+  color: blue;
+}
+
+#newdrink {
+  text-decoration: none;
+}
+
+#about {
+  text-decoration: none;
 }
 
 .main {
