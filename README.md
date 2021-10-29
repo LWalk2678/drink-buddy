@@ -81,7 +81,7 @@ _These are examples only. Replace with your own Post-MVP features._
 
 | Day           | Deliverable                                        | Status     |
 | ------------- | -------------------------------------------------- | ---------- |
-| October 21-22 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
+| October 21-22 | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
 | October 22    | Project Approval                                   | Incomplete |
 | October 25    | Core Application Structure (HTML, CSS, etc.)       | Incomplete |
 | October 22-27 | Pseudocode / actual code                           | Incomplete |
@@ -93,25 +93,24 @@ _These are examples only. Replace with your own Post-MVP features._
 
 | Component         | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------- | :------: | :------------: | :-----------: | :---------: |
-| Brainstorming     |    H     |      1hrs      |    1.5hrs     |     hrs     |
+| Brainstorming     |    H     |      1hrs      |    1.5hrs     |   1.5hrs    |
 | ReadMe SetUp      |    H     |      2hrs      |     2hrs      |    2hrs     |
-| WireFrame         |    H     |      1hr       |      hrs      |     hrs     |
-| React App Set up  |    H     |      1hr       |      hrs      |     hrs     |
-| New GitHub Repo   |    H     |      1hrs      |      hrs      |     hrs     |
-| Adding Form       |    H     |      3hrs      |      hrs      |     hrs     |
-| Working with API  |    H     |      3hrs      |      hrs      |     hrs     |
-| Building the Data |    H     |      3hrs      |      hrs      |     hrs     |
-| Creating the Pull |    H     |      1hr       |      hrs      |     hrs     |
-| Creating the Post |    H     |      1hr       |      hrs      |     hrs     |
-| Adding Favorite   |    M     |      1hr       |      hrs      |     hrs     |
-| Deploying the App |    H     |      2hrs      |      hrs      |     hrs     |
-| CSS Styling       |    M     |      3hrs      |      hrs      |     hrs     |
+| WireFrame         |    H     |      1hr       |    1.5hrs     |   1.5hrs    |
+| React App Set up  |    H     |      1hr       |     1hrs      |    1hrs     |
+| New GitHub Repo   |    H     |      1hrs      |     .5hrs     |    .5hrs    |
+| Adding Form       |    H     |      3hrs      |     4hrs      |    4hrs     |
+| Working with API  |    H     |      3hrs      |    3.5hrs     |   3.5hrs    |
+| Sorting the Data  |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Creating the Pull |    H     |      1hr       |     1hrs      |    1hrs     |
+| Creating the Post |    H     |      1hr       |     2hrs      |    2hrs     |
+| Deploying the App |    H     |      2hrs      |     .5hrs     |    .5hrs    |
+| CSS Styling       |    M     |      6hrs      |     5hrs      |    5hrs     |
 | ----------------- | -------- | -------------- | ------------- | ----------- |
-| Total             |    H     |      6hrs      |      hrs      |     hrs     |
+| Total             |    H     |     24hrs      |    24.5hrs    |   24.5hrs   |
 
 ## SWOT Analysis
 
-### Strengths: Background knowledge on the topic
+### Strengths: Determination to get it working!
 
 ### Weaknesses: Airtable. Also combining API's that are searchable and able to add to them.
 
@@ -123,8 +122,15 @@ _These are examples only. Replace with your own Post-MVP features._
 
 ### I was particularly proud of the code below because:
 
--On previous projects I had spent a lot of time in CSS to make my Links look like a Button. Happy to dind this coding to silplify making the Links match the styling of a button.
+-Spent a lot of time trying to sort the API data but because it was an Array of Objects, it made it a little more difficult to pull of.
 
 ```
-<Link id='edit' to={`/edit/${currentRecipe.id}`}><button>Edit Recipe</button></Link>
+resp.data.records.sort((a, b) => {
+        if (a.fields.Name < b.fields.Name) {
+          return -1;
+        }
+        if (a.fields.Name > b.fields.Name) {
+          return 1;
+        } return 0;
+      });
 ```
