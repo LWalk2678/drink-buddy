@@ -5,6 +5,9 @@ const RecipeList = ({ recipeData }) => {
   
   console.log(`Inside RecipeList Component ${recipeData.fields.Name}`)
   
+  //const sortedDrinks = recipeData.sort((a, b) => a.field.Name - b.fields.Name)
+  
+
     return (
       <div>
         <h3>{recipeData.fields.Name}</h3>
