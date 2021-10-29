@@ -18,7 +18,7 @@ const About = () => {
           <li><a href='https://stackoverflow.com/questions/41080481/in-reactjs-how-to-invoke-link-click-via-button-press'>Use a Link as a Button</a></li>
           <li><a href='https://commons.wikimedia.org/wiki/Main_Page'>Drink Photos</a></li>
           <li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort'>Sorting Array of Objects</a></li>
-        </ul>
+      </ul>
     </div>
   )
 }
