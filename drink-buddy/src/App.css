@@ -88,9 +88,11 @@
   max-width: 30vw;
   min-width: 200px;
 }
+
 .mixingPhoto {
   max-width: 200px;
   margin-top: 30px;
+  border-radius: 70px;
 }
 
 .ingredientList {
