@@ -79,7 +79,8 @@
 }
 
 .drinkOfDay .bartender {
-  max-width: 30vw;
+  width: 30vw;
+  max-width: 280px;
   min-width: 100px;
 }
 
