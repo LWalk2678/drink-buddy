@@ -120,7 +120,7 @@ const Form = ({formType, toggleFetch, setToggleFetch}) => {
   }
   
   return (
-    <div>
+    <div className='form'>
       <form onSubmit={formType === 'drink' ? handlePostRequest : handlePutRequest}>
         <br />
           <label htmlFor="Name">Drink Name:</label>
