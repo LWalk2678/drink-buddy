@@ -19,6 +19,8 @@ const About = () => {
           <li><a href='https://commons.wikimedia.org/wiki/Main_Page'>Drink Photos</a></li>
           <li><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort'>Sorting Array of Objects</a></li>
       </ul>
+      <br/>
+      <img src='https://i.imgur.com/Kn3NxDr.gif' alt='drink' className='rainbow'></img>
     </div>
   )
 }
