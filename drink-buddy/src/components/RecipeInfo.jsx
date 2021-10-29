@@ -25,9 +25,9 @@ const Display = ({recipes, toggleFetch, setToggleFetch }) => {
   return (
 
       <div>
-      <h2>{currentRecipe.fields.Name}</h2>
-      <img src={currentRecipe.fields.image} alt={currentRecipe.fields.Name} className="drinkPhoto" />
-      <br/>
+        <h2>{currentRecipe.fields.Name}</h2>
+        <img src={currentRecipe.fields.image} alt={currentRecipe.fields.Name} className="drinkPhoto" />
+          <br/>
         <div className='ingredientList'>
           <ul>
           {currentRecipe.fields.ingredient1 ? <li>{currentRecipe.fields.measurement1} {currentRecipe.fields.ingredient1} </li> : null}
@@ -40,20 +40,16 @@ const Display = ({recipes, toggleFetch, setToggleFetch }) => {
           {currentRecipe.fields.ingredient8 ? <li>{currentRecipe.fields.measurement8} {currentRecipe.fields.ingredient8} </li> : null }
             
           </ul>
-      </div>
-      <br/>
-      <em>Instructions: {currentRecipe.fields.instructions}</em>
-      <br />
-      <br />
-      <br />
-            <div className = 'links'>
-        {/* <button onClick={redirect} className='infoButtons'>Delete</button> */}
-        <button onClick={deleteRecipe} className='infoButtons'>Delete</button>
-        <Link id='edit' to={`/edit/${currentRecipe.id}`}><button className='infoButtons'>Edit Recipe</button></Link>
-        <br />
-        <br />
-      </div>
-      
+        </div>
+          <br/>
+        <em>Instructions: {currentRecipe.fields.instructions}</em>
+          <br />
+          <br />
+          <br />
+        <div className = 'links'>
+          <button onClick={deleteRecipe} className='infoButtons'>Delete</button>
+          <Link id='edit' to={`/edit/${currentRecipe.id}`}><button className='infoButtons'>Edit Recipe</button></Link>
+        </div>
       </div>
   )
     
