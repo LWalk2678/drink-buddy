@@ -161,16 +161,20 @@
     color: purple;
   }
 
+  .body h3 {
+    font-size: 28px;
+  }
+
   .body h2 {
     font-size: 36px;
   }
 
   .body .ingredientList {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   .body .instructions {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   .body .thumbnail {
