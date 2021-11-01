@@ -186,4 +186,11 @@
     max-width: 65%;
     border-radius: 15%;
   }
+
+  .body .aboutText {
+    font-size: 18px;
+  }
+  .body .aboutList {
+    font-size: 18px;
+  }
 }
