@@ -42,7 +42,7 @@ const Display = ({recipes, toggleFetch, setToggleFetch }) => {
           </ul>
         </div>
           <br/>
-        <em>Instructions: {currentRecipe.fields.instructions}</em>
+        <em className='instructions'>Instructions: {currentRecipe.fields.instructions} </em>
           <br />
           <br />
           <br />
